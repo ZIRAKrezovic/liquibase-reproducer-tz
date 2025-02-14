@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+        id: 1728637475481-1
+        author: TEST
+        changes:
+          - createSequence:
+              incrementBy: 50
+              sequenceName: TEST_TABLE_SEQ
+              startValue: 1
+  - changeSet:
+          id: 1728637475481-2
+          author: TEST
+          changes:
+            - createTable:
+                columns:
+                  - column:
+                      constraints:
+                        nullable: false
+                        primaryKey: true
+                        primaryKeyName: TEST_TABLE_PK
+                      name: ID
+                      type: BIGINT
+                  - column:
+                      name: CREATED
+                      type: TIMESTAMP(6) WITH TIME ZONE
+                tableName: TEST_TABLE

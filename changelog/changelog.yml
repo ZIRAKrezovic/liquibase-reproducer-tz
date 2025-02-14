@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: changelog/initial/init.yml
+  - include:
+      file: changelog/data/testdata.yml

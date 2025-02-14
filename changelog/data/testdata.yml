@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1699311391419-1
+      author: TEST
+      changes:
+        - insert:
+            tableName: TEST_TABLE
+            columns:
+              - column:
+                  name: ID
+                  valueComputed: 900
+              - column:
+                  name: CREATED
+                  valueDate: 2024-10-14T00:00:00+02:00
